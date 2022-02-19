@@ -6,6 +6,8 @@
       <b-nav-item to ="/about">About</b-nav-item>
       <b-nav-item to ="/nuevo">Nuevo</b-nav-item>
       <b-nav-item to ="/almacenamiento">Almacenamiento</b-nav-item>
+      <b-nav-item to ="/masa">Masa</b-nav-item>
+      <b-nav-item to ="/longitud">Longitud</b-nav-item>
     </b-navbar-nav>
   </b-navbar>
     <router-view/>
