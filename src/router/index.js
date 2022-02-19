@@ -3,6 +3,8 @@ import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import Nuevo from '../views/Nuevo.vue'
 import almacenamiento from '../views/ConvertirAlmacenamiento.vue'
+import masa from '../views/ConvertirMasa.vue'
+import longitud from '../views/ConvertirLongitud.vue'
 
 Vue.use(VueRouter)
 
@@ -23,6 +25,16 @@ const routes = [
     path:'/almacenamiento',
     name:'Almacenamiento',
     component: almacenamiento
+  },
+  {
+    path:'/masa',
+    name:'Masa',
+    component: masa
+  },
+  {
+    path:'/longitud',
+    name:'Longitud',
+    component: longitud
   },
 
   {
