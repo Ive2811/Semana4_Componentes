@@ -1,31 +1,31 @@
 <template>
 <div class="Body"> 
-        <font face="Comic Sans MS,arial,verdana"><h1>Convertidor de Masa</h1></font>
+        <font face="Comic Sans MS,arial,verdana"><b-alert show variant="danger"><h1>Convertidor de Masa</h1></b-alert></font>
     <div class="Main">
         <div class="form-group">
-				 <font face="Comic Sans MS,arial,verdana"><h6> Ingrese la cantidad que desea converir:  <input type="number" v-model ="valor" ></h6></font>
+				 <font face="Comic Sans MS,arial,verdana"><h6> Ingrese la cantidad que desea convertir:  <input type="number" v-model ="entrada_numero" ></h6></font>
           <br>
 				
 			</div>
         <div>
             <font face="Comic Sans MS,arial,verdana"><span>De:</span></font>
         </div>
-        <select v-model="fromRate">
+        <select v-model="convertFrom">
             <option value="g">Gramos</option>
-            <option value="kg">Kilogramo</option>
+            <option value="kg">Kilogramos</option>
             <option value="onz">Onzas</option>
-            <option value="lb">libras</option>
-            <option value="T">Tonelada</option>
+            <option value="lb">Libras</option>
+            <option value="T">Toneladas</option>
         </select>
         <div>
             <font face="Comic Sans MS,arial,verdana"><span>Hacia:</span></font>
         </div>
-        <select v-model="toRate">
+        <select v-model="convertTo">
             <option value="g">Gramos</option>
-            <option value="kg">Kilogramo</option>
+            <option value="kg">Kilogramos</option>
             <option value="onz">Onzas</option>
-            <option value="lb">libras</option>
-            <option value="T">Tonelada</option>
+            <option value="lb">Libras</option>
+            <option value="T">Toneladas</option>
         </select>
         <br>
         <br>
@@ -41,19 +41,22 @@
 <script>
 export default ({
     name:"Masa",
-    data(){
-        return{
+    data(){return{
             entrada_numero:"",
-            conversiones_gramos:{ "g":1,"kg":0.001,"onz":0.03528,"lb":0.002205,"T":0.000001102},    
+            conversiones_gramos:{ "g":1,
+                                  "kg":0.001,
+                                  "onz":0.03528,
+                                  "lb":0.002205,
+                                  "T":0.000001102},    
             salida: "",
-            toRate: "g",
-            fromRate:"kg"
+            convertTo: "g",
+            convertFrom:"kg"
         }},
         methods:{
             calcular:function(){
-                let toRate_ = this.conversiones_gramos[this.toRate]
-                let fromRate_ = this.conversiones_gramos[this.fromRate]
-                var resultado = ((toRate_/fromRate_))*this.entrada_numero
+                let convertTo = this.conversiones_gramos[this.convertTo]
+                let convertFrom = this.conversiones_gramos[this.convertFrom]
+                var resultado = ((convertTo/convertFrom))*this.entrada_numero
                 this.salida =resultado         
             }
         }
@@ -73,7 +76,7 @@ export default ({
 	padding: 50px;
 	border-radius: 30px;
     border-color:rgb(5, 5, 5);
-	background-color: rgba(205, 112, 209, 0.83);
+	background-color: rgba(208, 131, 211, 0.83);
 	color: rgb(0, 0, 0);
 }
 #Resultado h2 {
