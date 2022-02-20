@@ -5,6 +5,8 @@ import Nuevo from '../views/Nuevo.vue'
 import almacenamiento from '../views/ConvertirAlmacenamiento.vue'
 import masa from '../views/ConvertirMasa.vue'
 import longitud from '../views/ConvertirLongitud.vue'
+import monedas from '../views/ConvertirMonedas.vue'
+
 
 Vue.use(VueRouter)
 
@@ -35,6 +37,11 @@ const routes = [
     path:'/longitud',
     name:'Longitud',
     component: longitud
+  },
+  {
+    path:'/monedas',
+    name:'Monedas',
+    component: monedas
   },
 
   {
