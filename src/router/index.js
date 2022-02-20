@@ -6,7 +6,7 @@ import almacenamiento from '../views/ConvertirAlmacenamiento.vue'
 import masa from '../views/ConvertirMasa.vue'
 import longitud from '../views/ConvertirLongitud.vue'
 import tiempo from '../views/ConvertirTiempo.vue'
-
+import monedas from '../views/ConvertirMonedas.vue'
 Vue.use(VueRouter)
 
 const routes = [
