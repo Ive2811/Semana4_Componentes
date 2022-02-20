@@ -2,6 +2,7 @@
   <div id="app">
     <navigation/>
     <almacenamiento/>
+    <tiempo/>
   </div>
 </template>
 <script>
