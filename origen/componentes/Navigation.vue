@@ -9,6 +9,7 @@
       <b-nav-item to ="/tiempo">tiempo</b-nav-item>
       <b-nav-item to ="/masa">Masa</b-nav-item>
       <b-nav-item to ="/longitud">Longitud</b-nav-item>
+      <b-nav-item to ="/monedas">Monedas</b-nav-item>
     </b-navbar-nav>
   </b-navbar>
     <router-view/>
