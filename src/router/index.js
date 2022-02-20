@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import Nuevo from '../views/Nuevo.vue'
 import almacenamiento from '../views/ConvertirAlmacenamiento.vue'
+import tiempo from '../views/ConvertirTiempo.vue'
 import masa from '../views/ConvertirMasa.vue'
 import longitud from '../views/ConvertirLongitud.vue'
 import monedas from '../views/ConvertirMonedas.vue'
@@ -28,6 +29,13 @@ const routes = [
     name:'Almacenamiento',
     component: almacenamiento
   },
+  
+  {
+    path:'/tiempo',
+    name:'Tiempo',
+    component: tiempo
+  },
+  
   {
     path:'/masa',
     name:'Masa',
