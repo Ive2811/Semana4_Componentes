@@ -5,7 +5,7 @@
         <h1> Diferentes tipo de medidas de tiempo</h1>
           <b-alert show variant="success">Ingrese la cantidad que desea convertir:</b-alert>
 
-        <div class="Main">
+        <div class="Mainz">
             <input type="text" v-model ="valor" >
         <div>
             <span>selecciona la medida que deseas convertir:</span>
