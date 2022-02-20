@@ -1,10 +1,10 @@
 <template>
-	<div class="body">
+	<div class="bodys">
 		<font face="Comic Sans,arial,verdana"><h1 style="color: aliceblue;" class="heading text-center display-2">Conversor de Monedas</h1></font>
 
 	<div class="container">
 
-		<div class="main">
+		<div class="mainss">
 
 			<div class="form-group">
 				<label for="oamount">
@@ -209,7 +209,7 @@ export default {
 }
 </script>
 <style>
-.body {
+.bodys {
 	background-color: rgb(37, 46, 46);
 	background-position: center;
 	background-size: cover;
@@ -225,7 +225,7 @@ hr {
 	width: 40%;
 	margin-bottom: 55px;
 }
-.main {
+.mainss {
 	width: 50vw;
 	margin: auto;
 	padding: 30px;
