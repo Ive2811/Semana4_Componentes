@@ -3,6 +3,7 @@
     <navigation/>
     <almacenamiento/>
     <tiempo/>
+    <monedas/>
   </div>
 </template>
 <script>
