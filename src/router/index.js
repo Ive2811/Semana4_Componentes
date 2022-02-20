@@ -43,6 +43,11 @@ const routes = [
     name:'Tiempo',
     component: tiempo
   },
+  {
+    path:'/monedas',
+    name:'Monedas',
+    component: monedas
+  },
 
   {
     path: '/about',
